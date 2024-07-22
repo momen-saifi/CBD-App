@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>soFFer - Software Landing Page Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">CBD App</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#overview" class="nav-item nav-link">Overview</a>
+                        <a href="#features" class="nav-item nav-link">Features</a>
+                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+                        <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block"  data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Free Trial</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Power Up Development with Secure Automation
+                            </h1>
+                            <p class="text-white pb-3 animated slideInDown"> Automate Component Transfers Between
+                                Sandboxes with Confidence</p>
+                            <div class="position-relative w-100 mt-3">
+                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                    placeholder="Your Email" style="height: 58px;">
+                                
+                               
+                                <button type="button"
+                                    class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                    Free
+                                    Trial
+                                </button>
+                               
+                            </div>
+                            
+
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid rounded animated zoomIn" src="img/hero.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+    <!-- Modal start -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Request a Free Trial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="modalForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company Name</label>
+                            <input type="text" class="form-control" id="company" placeholder="Enter your company name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Information</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Provide any additional information or requirements"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="submitModalForm()">Submit Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+<!-- Feature Start -->
+<div class="container-xxl py-6">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="feature-item bg-light rounded text-center p-5">
+                    <i class="fas fa-4x fa-cogs text-primary mb-4"></i>
+                    <h5 class="mb-3">Direct Deployment</h5>
+                    <p class="m-0">Quickly deploy metadata directly from source to target Org. Ideal for fast, well-tested changes.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="feature-item bg-light rounded text-center p-5">
+                    <i class="fa fa-4x fa-code-branch text-primary mb-4"></i>
+                    <h5 class="mb-3">Commit Deployment</h5>
+                    <p class="m-0">Use GitHub for version control. Commit changes to Git before deployment for added review and testing.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item bg-light rounded text-center p-5">
+                    <i class="fas fa-4x fa-project-diagram text-primary mb-4"></i>
+                    <h5 class="mb-3">Pipeline Deployment</h5>
+                    <p class="m-0">Automate deployment across multiple environments. Seamless transitions from development to production.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-6" id="about">
+            <div class="container">
+                <div class="row g-5 flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Achieve Business Excellence with Essential Services</h1>
+                        <p class="mb-4">
+                            CBD App provides the robust control you need to maintain safety and productivity. Our
+                            strategic automation solutions are specifically designed to meet the stringent data security
+                            requirements of regulated industries.</p>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h5>Efficient Workflow Management</h5>
+                                <p class="mb-0">Optimize operations for enhanced efficiency and streamlined processes
+                                    that foster growth and innovation.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h5>24/7 Reliable Support</h5>
+                                <p class="mb-0"> Access dedicated support around the clock to promptly address and
+                                    resolve business needs, ensuring continuous operations and customer satisfaction.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a> -->
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.5s" src="img/home.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-6" id="about">
+            <div class="container">
+                <div class="row g-5 flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Achieve Business Excellence with Essential Services</h1>
+                        <p class="mb-4">
+                            At CBD App, we empower your business to achieve excellence with strategic automation
+                            solutions, meticulously crafted to meet the rigorous data security standards of regulated
+                            industries.</p>
+                        <div class="d-flex mb-4">
+                            <div class="ms-0">
+                                <h5 class="mb-3 ">Key elements for Salesforce's effective scaling include:</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3"><strong>Protection:</strong> Secure your operations with
+                                        Salesforce’s shared responsibility model to ensure strong security measures.
+                                    </li>
+                                    <li class="mb-3"><strong>Insight:</strong> Identify and fix potential errors to
+                                        strengthen data security and stay prepared.</li>
+                                    <li class="mb-3"><strong>Adherence:</strong> Follow data management rules to meet
+                                        regulations and avoid penalties.</li>
+                                    <li class="mb-3"><strong>Integrity:</strong> Maintain system reliability by reducing
+                                        errors in updates and applications for smooth operations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.5s" src="img/about2.jpg"
+                            alt="About Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="container-xxl bg-light my-6 py-5" id="overview">
+            <div class="container">
+                <div class="row g-5 py-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/app_integration1.jpg">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">01</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0">App Integration</h5>
+                        </div>
+                        <p class="mb-4">Integrate seamlessly with our powerful app solutions designed to enhance your
+                            operations. Our applications are fully customizable, offering a user-friendly interface for
+                            more effective and powerful outcomes.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Fully customizable</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>User friendly interface</p>
+                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>More effective & poerwfull
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">02</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0">App Customization</h5>
+                        </div>
+                        <p class="mb-4">Tailor your applications to fit your exact needs with our customizable
+                            solutions. Enjoy a user-friendly interface that enhances usability and experience, making
+                            your operations more effective and powerful.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Fully customizable</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>User friendly interface</p>
+                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>More effective & poerwfull
+                        </p>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/app_ustomization.jpg">
+                    </div>
+                </div>
+                <div class="row g-5 py-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/app_enhancement.jpg">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">03</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0">App Enhancement</h5>
+                        </div>
+                        <p class="mb-4">Tailor and refine your application to enhance functionality and user experience,
+                            optimizing workflows for improved productivity and meeting specific business needs.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Highly customizable to fit your unique
+                            requirements</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Intuitive and user-friendly interface</p>
+                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>Enhances efficiency and
+                            productivity
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -->
+
+
+        <div class="container-xxl bg-light my-6 py-5" id="overview">
+            <div class="container">
+                <!-- Version Controlling -->
+                <div class="row g-5 py-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/app_integration1.jpg " alt="Version Controlling">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">01</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0" style="font-family: Arial, sans-serif;">Efficient Version Control
+                                Management</h5>
+                        </div>
+                        <p class="mb-4">Implement robust version control systems to track and manage changes in your
+                            Salesforce codebase. Ensure team collaboration and maintain code integrity.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Track Code Changes</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Facilitate Team Collaboration</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Maintain Code Integrity</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Rollback Capabilities</p>
+                    </div>
+                </div>
+
+                <!-- Code Review -->
+                <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">02</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0" style="font-family: Arial, sans-serif;">Thorough Code Review for Quality
+                                Assurance</h5>
+                        </div>
+                        <p class="mb-4">Enhance code quality and maintain standards by conducting regular code reviews.
+                            Identify issues early and foster collaborative development.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Ensure Code Quality</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Identify Issues Early</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Foster Collaboration</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Standardize Code Practices</p>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/code_review.jpg" alt="Code Review">
+                    </div>
+                </div>
+
+                <!-- CI/CD Pipeline -->
+                <div class="row g-5 py-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/ci_cd_pipeline.jpg" alt="CI/CD Pipeline">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">03</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0" style="font-family: Arial, sans-serif;">Streamlined CI/CD Pipeline Setup
+                            </h5>
+                        </div>
+                        <p class="mb-4">Automate your development lifecycle with a continuous integration and continuous
+                            deployment pipeline. Reduce errors and speed up delivery.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Automated Testing and Deployment</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Streamline Development Workflow</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Reduce Manual Errors</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Continuous Monitoring</p>
+                    </div>
+                </div>
+                <!-- 
+        
+        <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="d-flex align-items-center mb-4">
+                    <h1 class="mb-0">04</h1>
+                    <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                    <h5 class="mb-0" style="font-family: Arial, sans-serif;">Seamless Salesforce to Salesforce Deployment</h5>
+                </div>
+                <p class="mb-4">Ensure seamless deployment of configurations and data between Salesforce environments. Maintain consistency and reliability across platforms with our powerful solutions.</p>
+                <p><i class="fa fa-check-circle text-primary me-3"></i>Effortless Data Transfers</p>
+                <p><i class="fa fa-check-circle text-primary me-3"></i>Consistent Configuration Deployment</p>
+                <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>Reliable and Secure</p>
+                <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>Minimize Downtime</p>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <img class="img-fluid rounded" src="img/salesforce_to_salesforce_deployment.jpg" alt="Salesforce to Salesforce Deployment">
+            </div>
+        </div> -->
+
+
+                <!-- CIC Automation -->
+                <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">04</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0" style="font-family: Arial, sans-serif;">Advanced CIC Automation for
+                                Enhanced Efficiency</h5>
+                        </div>
+                        <p class="mb-4">Automate the continuous integration and continuous delivery processes. Enhance
+                            efficiency, ensure quality, and accelerate development cycles.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Automate CI/CD Processes</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Enhance Efficiency</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Accelerate Development Cycles</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Improve Deployment Accuracy</p>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/cic_automation2.jpg" alt="CIC Automation">
+                    </div>
+                </div>
+
+                <!-- Code Backup -->
+                <div class="row g-5 py-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/code_backup.jpg" alt="Code Backup">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">05</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0" style="font-family: Arial, sans-serif;">Reliable Code Backup Solutions</h5>
+                        </div>
+                        <p class="mb-4">Securely back up your Salesforce code to prevent data loss and ensure quick
+                            recovery in case of issues.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Reliable Code Backup</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Quick Recovery Options</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Prevent Data Loss</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Automated Scheduled Backups</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Advanced Feature Start -->
+        <div class="container-xxl py-6" id="features">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Advanced Features</h1>
+                    <p class="mb-5">Explore advanced functionalities designed to streamline operations and enhance
+                        productivity. Dive into innovative tools tailored to meet your specific needs, ensuring seamless
+                        integration and optimal performance.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-edit fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Fully Customizable</h5>
+                            <p class="m-0">Customize every feature to suit your needs with our highly adaptable
+                                platform.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-sync fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">App Integration</h5>
+                            <p class="m-0">Effortlessly integrate applications to streamline operations and enhance
+                                efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-laptop fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">High Resolution</h5>
+                            <p class="m-0">Achieve optimal clarity and precision with enhanced visual quality and
+                                detailed resolution, ensuring every detail stands out vividly.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-draw-polygon fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Drag And Drop</h5>
+                            <p class="m-0">Enhance productivity with easy-to-use drag-and-drop functionality for
+                                seamless organization and management.</p>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-share-alt fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Salesforce Deployment</h5>
+                            <p class="m-0">Deploy metadata directly from the source to the destination Salesforce Org
+                                with ease.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-code-branch fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Version Controlling</h5>
+                            <p class="m-0">Integrated version control with GitHub for better management and tracking of
+                                changes.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-cogs fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">CI/CD Pipeline</h5>
+                            <p class="m-0">Automate deployment sequences within predefined projects for continuous
+                                integration and delivery.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-database fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Code Backup</h5>
+                            <p class="m-0">Ensure code backup and recovery for Salesforce environments to prevent data
+                                loss.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.7s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-check-circle fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Code Review</h5>
+                            <p class="m-0">Conduct thorough code reviews to maintain code quality and adherence to best
+                                practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.9s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-robot fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">CI/CD Automation</h5>
+                            <p class="m-0">Automate continuous integration and continuous delivery processes for
+                                efficient software development.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="2.1s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-tachometer-alt fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Dashboard</h5>
+                            <p class="m-0">Monitor and visualize key metrics with our comprehensive dashboard features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Advanced Feature End -->
+
+        <!-- Facts Start -->
+        <div class="container-xxl bg-primary my-6 py-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                        <i class="fa fa-cogs fa-3x text-white mb-3"></i>
+                        <h1 class="mb-2" data-toggle="counter-up">7264</h1>
+                        <p class="text-white mb-0">Active Install</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                        <i class="fa fa-users fa-3x text-white mb-3"></i>
+                        <h1 class="mb-2" data-toggle="counter-up">6521</h1>
+                        <p class="text-white mb-0">Satisfied Clients</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                        <h1 class="mb-2" data-toggle="counter-up">729</h1>
+                        <p class="text-white mb-0">Award Wins</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-quote-left fa-3x text-white mb-3"></i>
+                        <h1 class="mb-2" data-toggle="counter-up">5917</h1>
+                        <p class="text-white mb-0">Clients Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+        <!-- Process Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 d-flex align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid  rounded" src="img/security.jpg">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Secure Your Salesforce DevOps in 3 Easy Steps</h1>
+                        <p class="mb-4">Oraqosoft optimizes every aspect that distinguishes Salesforce CI/CD. Streamline
+                            operations, fortify data security, and eliminate errors with precision automation.</p>
+                        <ul class="process mb-0">
+                            <li>
+                                <span><i class="fa fa-cogs"></i></span>
+                                <div>
+                                    <h5>Intelligent Metadata Processing</h5>
+                                    <p>Automate your Salesforce CI/CD processes with Oraqosoft's intelligent metadata
+                                        processing for secure operations.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-robot"></i></span>
+                                <div>
+                                    <h5>A.I.-Driven Automation</h5>
+                                    <p>Use A.I.-driven automation for seamless integration and improved efficiency.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-shield-alt"></i></span>
+                                <div>
+                                    <h5>Compliance and Security</h5>
+                                    <p>Ensure compliance with SOC2, HIPAA, PCI-DSS, and ISO27001 standards for a secure
+                                        DevOps pipeline.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process End -->
+
+        <!-- Gain Clear Insight into Your Salesforce Environment -->
+        <div class="container-xxl py-6" id="visibility">
+            <div class="container">
+                <div class="row g-5 flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Gain Clear Insight into Your Salesforce Environment</h1>
+                        <p class="mb-4">Ensure high standards for code quality, permissions, and policy adherence with
+                            streamlined processes. Our system continuously checks your code and settings against more
+                            than 400 rules specific to Salesforce.</p>
+                        <ul class="process mb-0">
+                            <li>
+                                <span><i class="fa fa-eye"></i></span>
+                                <div>
+                                    <h5>Collaborative Code Review Process</h5>
+                                    <p>Encourage a team-based code review approach to drive ongoing improvements,
+                                        resulting in resilient, maintainable code and enhanced development practices.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-search"></i></span>
+                                <div>
+                                    <h5>Instant Issue Detection</h5>
+                                    <p>Quickly find security, compliance, and maintenance issues in your Salesforce
+                                        setup.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-cog"></i></span>
+                                <div>
+                                    <h5>Customizable Rules</h5>
+                                    <p>Adjust rules at each stage to reduce unnecessary alerts and improve actionable
+                                        insights.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center wow fadeInUp" data-wow-delay="0.5s">
+                        <img class="img-fluid d-flex align-items-center rounded" src="img/code_cleaning.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Visibility End -->
+
+        <!-- Efficient Data Management Solutions -->
+        <div class="container-xxl py-6" id="data-solutions">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 order-lg-2 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Efficient Data Management Solutions</h1>
+                        <p class="mb-4">Optimize Salesforce operations with comprehensive data management solutions.
+                            Simplify data migration, ensure reliable backups and recovery, and optimize storage costs
+                            effortlessly.</p>
+                        <ul class="process mb-0">
+                            <li>
+                                <span><i class="fa fa-database"></i></span>
+                                <div>
+                                    <h5>Component Migration and Recovery</h5>
+                                    <p>Simplify the migration, backup, and recovery of Salesforce components to ensure
+                                        seamless transitions and data integrity.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-file-archive"></i></span>
+                                <div>
+                                    <h5>Intelligent Archiving</h5>
+                                    <p>Implement intelligent archiving strategies to optimize storage and ensure data
+                                        accessibility.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-cloud-upload-alt"></i></span>
+                                <div>
+                                    <h5>Automated CI/CD Repository Migration</h5>
+                                    <p>Automatically migrate your CI/CD repositories to streamline operations and
+                                        enhance efficiency.</p>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center order-lg-1 wow fadeInUp" data-wow-delay="0.5s">
+                        <img class="img-fluid rounded" src="img/data_management.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Data Solutions End -->
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-6" id="pricing">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Pricing Plan</h1>
+                    <p class="mb-5">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat
+                        ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="price-item rounded overflow-hidden">
+                            <div class="bg-dark p-4">
+                                <h4 class="text-white mt-2">Standard</h4>
+                                <div class="text-white">
+                                    <span class="align-top fs-4 fw-bold">$</span>
+                                    <h1 class="d-inline display-6 text-primary mb-0"> 29.99</h1>
+                                    <span class="align-baseline">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i
+                                        class="fa fa-times text-danger pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i
+                                        class="fa fa-times text-danger pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i
+                                        class="fa fa-times text-danger pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i
+                                        class="fa fa-times text-danger pt-1"></i></div>
+                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="price-item rounded overflow-hidden">
+                            <div class="bg-primary p-4">
+                                <h4 class="text-white mt-2">Professional</h4>
+                                <div class="text-white">
+                                    <span class="align-top fs-4 fw-bold">$</span>
+                                    <h1 class="d-inline display-6 text-dark mb-0"> 49.99</h1>
+                                    <span class="align-baseline">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i
+                                        class="fa fa-times text-danger pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i
+                                        class="fa fa-times text-danger pt-1"></i></div>
+                                <a href="" class="btn btn-primary rounded-pill py-2 px-4 mt-3">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item rounded overflow-hidden">
+                            <div class="bg-dark p-4">
+                                <h4 class="text-white mt-2">Ultimate</h4>
+                                <div class="text-white">
+                                    <span class="align-top fs-4 fw-bold">$</span>
+                                    <h1 class="d-inline display-6 text-primary mb-0"> 79.99</h1>
+                                    <span class="align-baseline">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i
+                                        class="fa fa-check text-success pt-1"></i></div>
+                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-6" id="testimonial">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">What Our Clients Say</h1>
+                    <p class="mb-5">Hear from our satisfied customers about their experiences with our services and
+                        solutions.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>It was a great
+                            experience with team Oraqosoft . They have a great development team with talented project
+                            managers who can deliver the project on time. Thank you so much for your exceptional service
+                            and dedication.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial.png"
+                                style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">John</h5>
+                                <span>Salesforce Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>We are very
+                            pleased with this Company to which we have asked to do a dynamic website and it has been
+                            done quite professionally. they are very professional and expert in there work thanks again
+                            team .</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial.png"
+                                style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">Macedon Overseas
+                                </h5>
+                                <span>Pigment Company</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>
+                            It was a great experience with team Oraqosoft. They have a great team with indepth knowledge
+                            of salesforce Their response time was always reliable and quick .I highly recommend
+                            Oraqosoft for Salesforce Support and Training.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial.png"
+                                style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">Esra Yoruk
+                                </h5>
+                                <span>Salesforce Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-6" id="contact">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-3">Get In Touch</h1>
+                        <!-- <p class="mb-4">The contact form is currently inactive. Get a functional and working contact
+                            form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and
+                            you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2">Call Us</p>
+                                <h5 class="mb-0">+91 9873967905</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2">Mail Us</p>
+                                <h5 class="mb-0">contact@oraqosoft.com</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-0">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2">Our Office</p>
+                                <h5 class="mb-0">A-26 Commercial Complex,Govindpuram,Ghaziabad, UP-201013</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            style="height: 150px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-body footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
+                        <a class="btn btn-link" href="">About</a>
+                        <a class="btn btn-link" href="">Contact</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Conditions</a>
+                        <a class="btn btn-link" href="">Support</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Community<span></span></p>
+                        <a class="btn btn-link" href="">Career</a>
+                        <a class="btn btn-link" href="">Leadership</a>
+                        <a class="btn btn-link" href="">Strategy</a>
+                        <a class="btn btn-link" href="">History</a>
+                        <a class="btn btn-link" href="">Components</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non vulpu</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
+                                target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+</body>
+
+</html>
