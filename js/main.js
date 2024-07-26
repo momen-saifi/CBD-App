@@ -88,3 +88,16 @@
     
 })(jQuery);
 
+
+// function redirectToContactForm() {
+//     const email = document.getElementById('newsletter-email').value;
+//     const contactEmailField = document.getElementById('name');
+
+//     if (email) {
+//         console.log(email);
+//         contactEmailField.value = email;
+       
+//     }
+
+//     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+// }

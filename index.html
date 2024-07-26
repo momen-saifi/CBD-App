@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>soFFer - Software Landing Page Template</title>
+    <title>CBD App</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -11,7 +11,7 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,8 +48,8 @@
         <div class="container-xxl position-relative p-0" id="home">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">CBD App</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+
+                    <img src="img/cbd.png" alt="Logo" style="height: 120px; width: 100px">
                 </a>
                 <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -61,11 +61,12 @@
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="#overview" class="nav-item nav-link">Overview</a>
                         <a href="#features" class="nav-item nav-link">Features</a>
-                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+                        <!-- <a href="#pricing" class="nav-item nav-link">Pricing</a> -->
                         <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block"  data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Free Trial</a>
+                    <a href="" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Free Trial</a>
                 </div>
             </nav>
 
@@ -77,100 +78,161 @@
                             </h1>
                             <p class="text-white pb-3 animated slideInDown"> Automate Component Transfers Between
                                 Sandboxes with Confidence</p>
-                            <div class="position-relative w-100 mt-3">
+                            <!-- <div class="position-relative w-100 mt-3">
                                 <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
                                     placeholder="Your Email" style="height: 58px;">
-                                
-                               
+
                                 <button type="button"
-                                    class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                                    Free
-                                    Trial
+                                    class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2">
+                                    Watch a demo
                                 </button>
-                               
+
+                            </div> -->
+                            <div class="position-relative w-100 mt-3">
+                                <!-- <div class="d-flex justify-content-center"> -->
+                                <a href="" class="btn btn-light rounded-pill py-2 px-4  me-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModalCenter">Free Trial</a>
+                                <a href="#contact" class="btn btn-light rounded-pill py-2 px-4 ms-3 me-2">Watch a
+                                    demo</a>
+                                <!-- </div> -->
                             </div>
-                            
+
 
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid rounded animated zoomIn" src="img/hero.jpg" alt="">
+                            <img class="img-fluid rounded animated zoomIn" src="img/homeImg.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
-    <!-- Modal start -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Request a Free Trial</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="modalForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="company" class="form-label">Company Name</label>
-                            <input type="text" class="form-control" id="company" placeholder="Enter your company name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Additional Information</label>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Provide any additional information or requirements"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="submitModalForm()">Submit Request</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal end -->
 
-<!-- Feature Start -->
-<div class="container-xxl py-6">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="feature-item bg-light rounded text-center p-5">
-                    <i class="fas fa-4x fa-cogs text-primary mb-4"></i>
-                    <h5 class="mb-3">Direct Deployment</h5>
-                    <p class="m-0">Quickly deploy metadata directly from source to target Org. Ideal for fast, well-tested changes.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="feature-item bg-light rounded text-center p-5">
-                    <i class="fa fa-4x fa-code-branch text-primary mb-4"></i>
-                    <h5 class="mb-3">Commit Deployment</h5>
-                    <p class="m-0">Use GitHub for version control. Commit changes to Git before deployment for added review and testing.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="feature-item bg-light rounded text-center p-5">
-                    <i class="fas fa-4x fa-project-diagram text-primary mb-4"></i>
-                    <h5 class="mb-3">Pipeline Deployment</h5>
-                    <p class="m-0">Automate deployment across multiple environments. Seamless transitions from development to production.</p>
+        <!-- style="height: 516px; width: 500px;" -->
+        <!-- Modal start -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Request a Free Trial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="modalForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your full name"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address <span
+                                        class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Enter your email address" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="company" class="form-label">Company Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="company"
+                                    placeholder="Enter your company name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number <span
+                                        class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Additional Information</label>
+                                <textarea class="form-control" id="message" rows="3"
+                                    placeholder="Provide any additional information or requirements"></textarea>
+                            </div>
+                            <div id="validationMessage" class="text-danger"></div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="submitModalForm()">Submit
+                            Request</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Feature End -->
+        <!-- Modal end -->
+
+        <!-- Success Message Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Request Submitted</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Your request has been submitted successfully! We will get back to you shortly.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- success message model end -->
+
+        <!-- Error  message model start -->
+        <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-white">
+                        <h5 class="modal-title" id="errorModalTitle">Error</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="errorMessage">Failed to send request. Please try again.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Error  message model end -->
+
+
+        <!-- Feature Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded text-center p-5">
+                            <i class="fas fa-4x fa-cogs text-primary mb-4"></i>
+                            <h5 class="mb-3">Direct Deployment</h5>
+                            <p class="m-0">Quickly deploy metadata directly from source to target Org. Ideal for fast,
+                                well-tested changes.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded text-center p-5">
+                            <i class="fa fa-4x fa-code-branch text-primary mb-4"></i>
+                            <h5 class="mb-3">Version Controlling</h5>
+                            <p class="m-0">Use GitHub for version control. Commit changes to Git before deployment for
+                                added review and testing.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded text-center p-5">
+                            <i class="fas fa-4x fa-project-diagram text-primary mb-4"></i>
+                            <h5 class="mb-3">Pipeline Deployment</h5>
+                            <p class="m-0">Automate deployment across multiple environments. Seamless transitions from
+                                development to production.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
 
 
         <!-- About Start -->
@@ -180,9 +242,8 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="mb-4">Achieve Business Excellence with Essential Services</h1>
                         <p class="mb-4">
-                            CBD App provides the robust control you need to maintain safety and productivity. Our
-                            strategic automation solutions are specifically designed to meet the stringent data security
-                            requirements of regulated industries.</p>
+                            Ensure seamless and compliant deployments with our CBD App. Our automation solutions deliver
+                            robust control and efficiency, meeting the stringent demands of regulated industries.</p>
                         <div class="d-flex mb-4">
                             <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
                                 <i class="fa fa-check"></i>
@@ -216,15 +277,13 @@
 
 
         <!-- About Start -->
+        <!-- 
         <div class="container-xxl py-6" id="about">
             <div class="container">
                 <div class="row g-5 flex-column-reverse flex-lg-row">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="mb-4">Achieve Business Excellence with Essential Services</h1>
-                        <p class="mb-4">
-                            At CBD App, we empower your business to achieve excellence with strategic automation
-                            solutions, meticulously crafted to meet the rigorous data security standards of regulated
-                            industries.</p>
+                        <p class="mb-4">At CBD App, we empower your business to achieve excellence with strategic automation solutions, meticulously crafted to ensure seamless and compliant deployments that meet the stringent demands of regulated industries.</p>
                         <div class="d-flex mb-4">
                             <div class="ms-0">
                                 <h5 class="mb-3 ">Key elements for Salesforce's effective scaling include:</h5>
@@ -248,71 +307,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-<!-- 
-        <div class="container-xxl bg-light my-6 py-5" id="overview">
-            <div class="container">
-                <div class="row g-5 py-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="img/app_integration1.jpg">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">01</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">App Integration</h5>
-                        </div>
-                        <p class="mb-4">Integrate seamlessly with our powerful app solutions designed to enhance your
-                            operations. Our applications are fully customizable, offering a user-friendly interface for
-                            more effective and powerful outcomes.</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Fully customizable</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>User friendly interface</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>More effective & poerwfull
-                        </p>
-                    </div>
-                </div>
-                <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">02</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">App Customization</h5>
-                        </div>
-                        <p class="mb-4">Tailor your applications to fit your exact needs with our customizable
-                            solutions. Enjoy a user-friendly interface that enhances usability and experience, making
-                            your operations more effective and powerful.</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Fully customizable</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>User friendly interface</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>More effective & poerwfull
-                        </p>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="img/app_ustomization.jpg">
-                    </div>
-                </div>
-                <div class="row g-5 py-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="img/app_enhancement.jpg">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">03</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">App Enhancement</h5>
-                        </div>
-                        <p class="mb-4">Tailor and refine your application to enhance functionality and user experience,
-                            optimizing workflows for improved productivity and meeting specific business needs.</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Highly customizable to fit your unique
-                            requirements</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Intuitive and user-friendly interface</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>Enhances efficiency and
-                            productivity
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-         -->
+        </div> -->
 
 
         <div class="container-xxl bg-light my-6 py-5" id="overview">
@@ -585,7 +580,7 @@
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                         <h1 class="mb-4">Secure Your Salesforce DevOps in 3 Easy Steps</h1>
-                        <p class="mb-4">Oraqosoft optimizes every aspect that distinguishes Salesforce CI/CD. Streamline
+                        <p class="mb-4">CBD App optimizes every aspect that distinguishes Salesforce CI/CD. Streamline
                             operations, fortify data security, and eliminate errors with precision automation.</p>
                         <ul class="process mb-0">
                             <li>
@@ -709,7 +704,7 @@
         <!-- Data Solutions End -->
 
         <!-- Pricing Start -->
-        <div class="container-xxl py-6" id="pricing">
+        <!-- <div class="container-xxl py-6" id="pricing">
             <div class="container">
                 <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Pricing Plan</h1>
@@ -806,7 +801,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Pricing End -->
 
 
@@ -829,7 +824,7 @@
                                 style="width: 65px; height: 65px;">
                             <div class="ps-4">
                                 <h5 class="mb-1">John</h5>
-                                <span>Salesforce Developer</span>
+                                <!-- <span>Salesforce Developer</span> -->
                             </div>
                         </div>
                     </div>
@@ -844,7 +839,7 @@
                             <div class="ps-4">
                                 <h5 class="mb-1">Macedon Overseas
                                 </h5>
-                                <span>Pigment Company</span>
+                                <!-- <span>Pigment Company</span> -->
                             </div>
                         </div>
                     </div>
@@ -859,7 +854,7 @@
                             <div class="ps-4">
                                 <h5 class="mb-1">Esra Yoruk
                                 </h5>
-                                <span>Salesforce Developer</span>
+                                <!-- <span>Salesforce Developer</span> -->
                             </div>
                         </div>
                     </div>
@@ -868,6 +863,43 @@
         </div>
         <!-- Testimonial End -->
 
+        <!-- Success Message Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Request Submitted</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Your request has been submitted successfully! We will get back to you shortly.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Success Message Modal End -->
+
+        <!-- Error Message Modal Start -->
+        <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-white">
+                        <h5 class="modal-title" id="errorModalTitle">Error</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="errorMessage">Failed to send request. Please try again.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Error Message Modal End -->
 
         <!-- Contact Start -->
         <div class="container-xxl py-6" id="contact">
@@ -941,6 +973,36 @@
                             </div>
                         </form>
                     </div>
+                    <!-- Success Toast -->
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1050;">
+                        <div id="successToast" class="toast bg-success text-white" role="alert" aria-live="assertive"
+                            aria-atomic="true">
+                            <div class="toast-header">
+                                <strong class="me-auto">Success</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Your message was sent successfully!
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Error Toast -->
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1050;">
+                        <div id="errorToast" class="toast bg-danger text-white" role="alert" aria-live="assertive"
+                            aria-atomic="true">
+                            <div class="toast-header">
+                                <strong class="me-auto">Error</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Failed to send message. Please try again.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -953,9 +1015,10 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>A-26 Commercial Complex, Govindpuram, Ghaziabad,
+                            UP-201013</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 9873967905</p>
+                        <p><i class="fa fa-envelope me-3"></i>contact@oraqosoft.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -972,23 +1035,13 @@
                         <a class="btn btn-link" href="">Support</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Community<span></span></p>
-                        <a class="btn btn-link" href="">Career</a>
-                        <a class="btn btn-link" href="">Leadership</a>
-                        <a class="btn btn-link" href="">Strategy</a>
-                        <a class="btn btn-link" href="">History</a>
-                        <a class="btn btn-link" href="">Components</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
-                            non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                                placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
+                        <p class="section-title text-white h5 mb-4">Our Project Features<span></span></p>
+                        
+                        <a class="btn btn-link" href="" onclick="event.preventDefault()">Salesforce Deployment</a>
+                        <a class="btn btn-link" href="" onclick="event.preventDefault()">Version Controlling</a>
+                        <a class="btn btn-link" href="" onclick="event.preventDefault()">CI/CD Pipeline</a>
+                        <a class="btn btn-link" href="" onclick="event.preventDefault()">Code Backup</a>
+                        <a class="btn btn-link" href="" onclick="event.preventDefault()">Code Review</a>
                     </div>
                 </div>
             </div>
@@ -996,46 +1049,30 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                            <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
-                                target="_blank">ThemeWagon</a>
+                            &copy; <a class="border-bottom" href="#">CBD App</a>, All Right Reserved.
+                                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                    
+                                
+                                <!-- Back to Top -->
+                                <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+                                        class="bi bi-arrow-up"></i></a>
                         </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
 
+                        <!-- JavaScript Libraries -->
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
-
-    <!-- JavaScript Libraries -->
-
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/email.js"></script>
+                        <!-- JavaScript Libraries -->
+                        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                        <script
+                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                        <script src="lib/wow/wow.min.js"></script>
+                        <script src="lib/easing/easing.min.js"></script>
+                        <script src="lib/waypoints/waypoints.min.js"></script>
+                        <script src="lib/counterup/counterup.min.js"></script>
+                        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                        <!-- Template Javascript -->
+                        <script src="js/main.js"></script>
+                        <script src="js/email.js"></script>
 </body>
 
 </html>
