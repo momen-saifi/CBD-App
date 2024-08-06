@@ -1,8 +1,27 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4AC4F3;
-    --light: #EDF5FF;
+
+    --primary: #FF6F61;
+    --secondary: #4AC4F3;
+    --light: #F7F9FA;
     --dark: #202942;
+    --grey-light: #E0E0E0;
+    --grey-dark: #A0A0A0;
+}
+
+.custom-color {
+    background-color: #FF6F61 !important;
+    color: #FF6F61 !important;
+}
+
+.custom-color-i {
+
+    color: #FF6F61 !important;
+}
+
+.custom-color-bg {
+
+    background-color: #FF6F61 !important;
 }
 
 
@@ -192,7 +211,7 @@ h6,
         left: 0;
         z-index: 999;
     }
-    
+
     .sticky-top.navbar {
         position: fixed;
         background: #FFFFFF;
@@ -282,6 +301,15 @@ h6,
 
 .advanced-feature-item:hover * {
     color: #FFFFFF !important;
+}
+
+/* Add '+' sign after the number */
+h1[data-toggle="counter-up"]::after {
+    content: '+';
+    margin-left: 5px;
+    /* Adjust spacing if needed */
+    font-size: 1.2em;
+    /* Adjust size if needed */
 }
 
 
@@ -379,6 +407,21 @@ h6,
 }
 
 
+/* demo from */
+.btn-custom {
+    background-color: #FF6F61 !important;
+    /* Main button color */
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #e55d50 !important;
+    /* Related shade for hover */
+    color: #fff;
+}
+
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
@@ -394,7 +437,7 @@ h6,
     justify-content: center;
     color: var(--light);
     border: 1px solid #858585;
-    border-radius: 40px;
+    border-radius: 50%;
     transition: .3s;
 }
 
@@ -427,6 +470,24 @@ h6,
     color: var(--light);
 }
 
+.footer .list-unstyled {
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .list-unstyled li {
+    color: #858585;
+    margin-bottom: 10px;
+    font-weight: normal;
+    transition: .3s;
+}
+
+.footer .list-unstyled li:hover {
+    color: var(--primary);
+    /* cursor: pointer;  */
+    text-decoration: underline;
+}
+
 .footer .copyright {
     padding: 25px 0;
     border-top: 1px solid rgba(256, 256, 256, .1);
@@ -434,6 +495,10 @@ h6,
 
 .footer .copyright a {
     color: var(--light);
+}
+
+.footer .copyright a:hover {
+    color: var(--primary);
 }
 
 .footer .footer-menu a {
@@ -448,7 +513,27 @@ h6,
     border-right: none;
 }
 
-.footer .copyright a:hover,
 .footer .footer-menu a:hover {
-    color: var(--secondary);
+    color: var(--primary);
+}
+
+/* arrow  */
+.btn-primary-custom {
+    background-color: #FF6F61 !important;
+    /* Main button color */
+    border-color: #FF6F61 !important;
+    color: #fff;
+}
+
+.btn-primary-custom:hover {
+    background-color: #e55d50 !important;
+    /* Related shade for hover */
+    border-color: #e55d50 !important;
+    color: #fff;
+}
+
+.btn-lg-square {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
