@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -30,19 +30,19 @@
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
-            
+
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 60
             }, 1500, 'easeInOutExpo');
-            
+
             if ($(this).parents('.navbar-nav').length) {
                 $('.navbar-nav .active').removeClass('active');
                 $(this).closest('a').addClass('active');
             }
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -52,7 +52,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -71,33 +71,33 @@
         margin: 25,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ],
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            992:{
-                items:2
+            992: {
+                items: 2
             }
         }
     });
+    //video model
+    $(document).ready(function () {
+        $('#videoModal').on('hidden.bs.modal', function () {
+            var video = document.getElementById('demoVideo');
+            if (video) {
+                video.pause(); // Pause the video
+                video.currentTime = 0; // Optionally, rewind to the beginning
+            }
+        });
+    });
     
+
+
 })(jQuery);
 
 
-// function redirectToContactForm() {
-//     const email = document.getElementById('newsletter-email').value;
-//     const contactEmailField = document.getElementById('name');
-
-//     if (email) {
-//         console.log(email);
-//         contactEmailField.value = email;
-       
-//     }
-
-//     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-// }
