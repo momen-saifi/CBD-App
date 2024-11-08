@@ -38,7 +38,7 @@
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-grow custom-color" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
@@ -119,26 +119,26 @@
 
 
 
-      <!-- Video Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="videoModalLabel">Watch a Demo</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="ratio ratio-16x9">
-                    <video id="demoVideo" controls>
-                        <source src="Img\Deployment_CBD_V.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+        <!-- Video Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoModalLabel">Watch a Demo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video id="demoVideo" controls>
+                                <source src="img/Deployment_CBD_V.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Video Modal end-->
+        <!-- Video Modal end-->
 
         <!-- style="height: 516px; width: 500px;" -->
         <!-- Modal start -->
@@ -186,7 +186,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="submitModalForm()">Submit
+                        <button type="button" class="btn btn-primary-custom" onclick="submitModalForm()">Submit
                             Request</button>
                     </div>
                 </div>
@@ -473,7 +473,7 @@
         </div>
 
         <!-- Advanced Feature Start -->
-        <div class="container-xxl py-6" id="features">
+        <!-- <div class="container-xxl py-6" id="features">
             <div class="container">
                 <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Advanced Features</h1>
@@ -490,7 +490,7 @@
                                 platform.</p>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="advanced-feature-item text-center rounded py-5 px-4">
                             <i class="fa fa-sync fa-3x text-primary mb-4"></i>
                             <h5 class="mb-3">App Integration</h5>
@@ -514,6 +514,116 @@
                                 seamless organization and management.</p>
                         </div>
                     </div> -->
+        <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-share-alt fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">Salesforce Deployment</h5>
+                            <p class="m-0">Deploy metadata directly from the source to the destination Salesforce Org
+                                with ease.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-code-branch fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">Version Controlling</h5>
+                            <p class="m-0">Integrated version control with GitHub for better management and tracking of
+                                changes.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-cogs fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">CI/CD Pipeline</h5>
+                            <p class="m-0">Automate deployment sequences within predefined projects for continuous
+                                integration and delivery.</p>
+                        </div>
+                    </div>
+                               New Feature for Tracking Metadata Changes -->
+        <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
+                <div class="advanced-feature-item text-center rounded py-5 px-4">
+                    <i class="fa fa-history fa-3x custom-color-i mb-4"></i>
+                    <h5 class="mb-3">MetaTrack Monitor</h5>
+                    <p class="m-0">Monitor every modification in your Salesforce metadata, ensuring traceability and efficient change management.</p>
+                </div>
+            </div> -->
+        <!-- New Feature for Tracking Unused Metadata -->
+        <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.7s">
+                <div class="advanced-feature-item text-center rounded py-5 px-4">
+                    <i class="fa fa-trash-alt fa-3x custom-color-i mb-4"></i>
+                    <h5 class="mb-3">MetaPurge Analyzer</h5>
+                    <p class="m-0">Automatically detect and eliminate unused metadata components to optimize performance and reduce clutter.</p>
+                </div>
+            </div> -->
+        <!-- New Deployment Feature for Conflict Detection -->
+        <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="2.3s">
+    <div class="advanced-feature-item text-center rounded py-5 px-4">
+        <i class="fa fa-exclamation-triangle fa-3x custom-color-i mb-4"></i>
+        <h5 class="mb-3">Conflict Detection</h5>
+        <p class="m-0">Detect conflicts during metadata deployments to ensure smooth and efficient processes.</p>
+    </div>
+</div> -->
+        <!-- New Deployment Feature for Rollback -->
+        <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="2.1s">
+        <div class="advanced-feature-item text-center rounded py-5 px-4">
+            <i class="fa fa-undo fa-3x custom-color-i mb-4"></i>
+            <h5 class="mb-3">DeployGuard Rollback</h5>
+            <p class="m-0">Easily roll back to previous metadata versions to recover from faulty deployments.</p>
+        </div>
+    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-database fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">Code Backup</h5>
+                            <p class="m-0">Ensure code backup and recovery for Salesforce environments to prevent data
+                                loss.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.7s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-check-circle fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">Code Review</h5>
+                            <p class="m-0">Conduct thorough code reviews to maintain code quality and adherence to best
+                                practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.9s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-robot fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">CI/CD Automation</h5>
+                            <p class="m-0">Automate continuous integration and continuous delivery processes for
+                                efficient software development.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="2.1s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-tachometer-alt fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">Dashboard</h5>
+                            <p class="m-0">Monitor and visualize key metrics with our comprehensive dashboard features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        Advanced Feature End  -->
+        <!-- Advanced Feature Start -->
+        <div class="container-xxl py-6" id="features">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Advanced Features</h1>
+                    <p class="mb-5">Explore advanced functionalities designed to streamline operations and enhance
+                        productivity. Dive into innovative tools tailored to meet your specific needs, ensuring seamless
+                        integration and optimal performance.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-edit fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">Fully Customizable</h5>
+                            <p class="m-0">Customize every feature to suit your needs with our highly adaptable
+                                platform.</p>
+                        </div>
+                    </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
                         <div class="advanced-feature-item text-center rounded py-5 px-4">
                             <i class="fa fa-share-alt fa-3x custom-color-i mb-4"></i>
@@ -536,6 +646,45 @@
                             <h5 class="mb-3">CI/CD Pipeline</h5>
                             <p class="m-0">Automate deployment sequences within predefined projects for continuous
                                 integration and delivery.</p>
+                        </div>
+                    </div>
+                    <!-- New Feature for Tracking Metadata Changes -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-history fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">MetaTrack Monitor</h5>
+                            <p class="m-0">Monitor every modification in your Salesforce metadata, ensuring traceability
+                                and efficient change management.</p>
+                        </div>
+                    </div>
+                    <!-- New Feature for Tracking Unused Metadata -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.7s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-trash-alt fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">MetaPurge Analyzer</h5>
+                            <p class="m-0">Automatically detect unused metadata components to optimize performance and
+                                streamline the environment.</p>
+                        </div>
+                    </div>
+
+                    <!-- New Deployment Feature for Rollback -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="2.1s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-undo fa-3x custom-color-i mb-4"></i>
+                            <!-- <h5 class="mb-3">DeployGuard Rollback</h5> -->
+                            <h5 class="mb-3">Rollback</h5>
+                           
+                            <p class="m-0">Easily roll back to previous metadata versions to recover from faulty
+                                deployments.</p>
+                        </div>
+                    </div>
+                    <!-- New Deployment Feature for Conflict Detection -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="2.3s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-exclamation-triangle fa-3x custom-color-i mb-4"></i>
+                            <h5 class="mb-3">Conflict Detection</h5>
+                            <p class="m-0">Detect conflicts during metadata deployments to ensure smooth and efficient
+                                processes.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
@@ -574,6 +723,7 @@
             </div>
         </div>
         <!-- Advanced Feature End -->
+
 
         <!-- Facts Start -->
         <div class="container-xxl custom-color-bg my-6 py-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -1064,7 +1214,6 @@
                         <p><i class="fa fa-phone-alt me-3"></i>+91 9873967905</p>
                         <p><i class="fa fa-envelope me-3"></i>contact@oraqosoft.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social"
                                 href="https://www.facebook.com/people/Oraqosoft-It-Solutions/100085900953931/"
                                 target="_blank"><i class="fab fa-facebook-f"></i></a>
